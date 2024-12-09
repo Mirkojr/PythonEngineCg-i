@@ -3,7 +3,7 @@ Basic CG-I Python Project Using Raycasting
 
 This project demonstrates a basic Computer Graphics (CG-I) engine using raycasting in Python. 
 
-![Demonstration image](canvas.png)
+
 
 Requirements
 ------------
