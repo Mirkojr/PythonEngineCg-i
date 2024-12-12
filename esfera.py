@@ -5,10 +5,10 @@
 import math
 
 class Esfera():
-    def __init__(self, centro, raio):
+    def __init__(self, centro, raio, material):
         self.centro = centro 
         self.raio = raio     
-        self.cor = (0, 255, 255)
+        self.material = material
 
     def intersect(self, origem, direcao):
         oc = (origem[0] - self.centro[0], origem[1] - self.centro[1], origem[2] - self.centro[2])
@@ -37,3 +37,11 @@ class Esfera():
             return t2
         
         return None
+
+    def getNormal(self, ponto):
+        return [ponto[i] - self.centro[i] for i in range(3)]
+    
+    def getMaterial(self):
+        return self.material
+    
+    

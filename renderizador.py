@@ -28,12 +28,11 @@ class Renderizador():
                 x = -self.w / 2 + (self.dx / 2) + c * self.dx
 
                 direcao = [x, y, -5] 
-                cor = self.processador.intersectObjects([0, 0, 0], direcao)  
-                if(cor[0] != None):
-                    pixels[c, l] = cor[0].cor
+                cor = self.processador.calculateColor([0, 0, 0], direcao)  
+                pixels[c, l] = cor
     
 
-        imagem.save("canvas.png")
+    
         img_byte_array = io.BytesIO()
         imagem.save(img_byte_array, format='PNG')  # Salva a imagem em formato PNG no buffer
         img_byte_array.seek(0)  # Volta o ponteiro para o início
