@@ -8,7 +8,7 @@ This project demonstrates a basic Computer Graphics (CG-I) engine using raycasti
 ![Demonstration image](canvas1.png)
 
 Requirements
-------------
+-------------
 Make sure you have the following libraries installed:
 
 - Pillow
