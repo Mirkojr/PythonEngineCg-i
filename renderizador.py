@@ -32,7 +32,8 @@ class Renderizador():
                 pixels[c, l] = cor
     
 
-    
+        #imagem.save("canvas.png") use when want to save the image in a file
+        #imagem.save("canvas1.png")
         img_byte_array = io.BytesIO()
         imagem.save(img_byte_array, format='PNG')  # Salva a imagem em formato PNG no buffer
         img_byte_array.seek(0)  # Volta o ponteiro para o início
